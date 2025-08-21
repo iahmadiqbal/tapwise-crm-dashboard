@@ -22,8 +22,7 @@ const ProfilesHeader = () => {
 
         {/* Add Profile Button */}
         <div className="flex justify-end sm:w-auto ml-2">
-          {/* 👆 yaha pe thoda space diya */}
-          <button className="flex items-center justify-center gap-2 px-4 py-2 bg-yellow-500 text-[#000] rounded-md hover:bg-yellow-600 transition">
+          <button className="flex items-center justify-center gap-2 px-4 py-2 bg-[#FFD900] text-black rounded-md hover:bg-[#e6c800] transition">
             <FiPlus className="h-5 w-5" />
             Add Profile
           </button>

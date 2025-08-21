@@ -1,3 +1,4 @@
+// NO "use client" here
 import type { Metadata } from "next";
 import "./globals.css";
 import ClientShell from "../components/ClientShell";
@@ -15,6 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* All client-side interactivity lives inside ClientShell */}
         <ClientShell>{children}</ClientShell>
       </body>
     </html>

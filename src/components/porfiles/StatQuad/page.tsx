@@ -39,7 +39,7 @@ const StatQuad: React.FC = () => {
             bg-white rounded-2xl shadow-md
             p-4
             flex flex-col items-center justify-center text-center
-            min-h-28 sm:min-h-32   /* purana height */
+            min-h-28 sm:min-h-32  
           "
         >
           <p

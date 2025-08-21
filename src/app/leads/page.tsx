@@ -1,3 +1,11 @@
+import LeadsTable from "../../components/leads/leadstable/page";
+import LeadsHeader from "../../components/leads/page";
+
 export default function LeadsPage() {
-  return <h1 className="text-2xl font-bold">Leads</h1>;
+  return (
+    <>
+      <LeadsHeader />
+      <LeadsTable />
+    </>
+  );
 }

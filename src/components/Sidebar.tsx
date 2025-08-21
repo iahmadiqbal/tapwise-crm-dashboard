@@ -51,7 +51,7 @@ export default function Sidebar({
         aria-hidden={!open}
       />
 
-      {/* Sidebar: fixed on lg, drawer on mobile */}
+      {/* Sidebar */}
       <aside
         className={[
           "fixed lg:fixed z-50 lg:z-40 top-0 left-0 h-screen w-64",
@@ -62,6 +62,7 @@ export default function Sidebar({
         aria-label="Sidebar"
       >
         <div className="pt-4">
+          {/* Logo + Close */}
           <div className="flex items-center justify-between">
             <Image
               src="/images/tapwise-dark-logo.png"
@@ -80,6 +81,9 @@ export default function Sidebar({
             </button>
           </div>
 
+          <div className="border-b border-gray-200 mt-4" />
+
+          {/* Nav */}
           <nav className="mt-6 flex flex-col gap-1">
             {menuItems.map(({ name, path, icon: Icon }) => {
               const active = isActive(path);
@@ -107,6 +111,7 @@ export default function Sidebar({
           </nav>
         </div>
 
+        {/* Logout */}
         <div className="p-3">
           <button
             type="button"
