@@ -22,22 +22,38 @@ const StatQuad: React.FC = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 w-full mt-5">
+    <section
+      className="
+        w-full mt-5
+        grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+        gap-4
+      "
+      role="list"
+      aria-label="Stats overview"
+    >
       {stats.map((stat, i) => (
         <div
           key={i}
-          className="bg-white rounded-2xl shadow-md p-4 flex flex-col items-center justify-center text-center"
+          role="listitem"
+          className="
+            bg-white rounded-2xl shadow-md
+            p-4
+            flex flex-col items-center justify-center text-center
+            min-h-28 sm:min-h-32   /* purana height */
+          "
         >
           <p
-            className="text-3xl font-bold"
+            className="font-bold leading-none text-3xl sm:text-4xl lg:text-5xl"
             style={{ color: getColor(stat.value) }}
           >
             {stat.value}
           </p>
-          <p className="text-sm font-medium text-gray-500 mt-2">{stat.label}</p>
+          <p className="mt-2 sm:mt-3 text-sm sm:text-base font-medium text-gray-600">
+            {stat.label}
+          </p>
         </div>
       ))}
-    </div>
+    </section>
   );
 };
 

@@ -1,6 +1,12 @@
+// NO "use client" here
+import type { Metadata } from "next";
 import "./globals.css";
-import Sidebar from "../components/Sidebar";
-import Topbar from "../components/Topbar";
+import ClientShell from "../components/ClientShell";
+
+export const metadata: Metadata = {
+  title: "Tapwise Dashboard",
+  description: "NFC CRM",
+};
 
 export default function RootLayout({
   children,
@@ -9,15 +15,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="flex h-screen bg-gray-50">
-        {/* Sidebar */}
-        <Sidebar />
-
-        {/* Main Content */}
-        <div className="flex flex-col flex-1">
-          <Topbar />
-          <main className="flex-1 p-10">{children}</main>
-        </div>
+      <body>
+        {/* All client-side interactivity lives inside ClientShell */}
+        <ClientShell>{children}</ClientShell>
       </body>
     </html>
   );
