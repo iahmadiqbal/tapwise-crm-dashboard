@@ -1,3 +1,13 @@
+import LeadsOverview from "../../components/dashboard/LeadsOverview/page";
+import DashboardStats from "../../components/dashboard/page";
+import QuickActions from "../../components/dashboard/QuickActions/page";
+
 export default function DashboardPage() {
-  return <h1 className="text-2xl font-bold">Dashboard</h1>;
+  return (
+    <>
+      <DashboardStats />
+      <LeadsOverview />
+      <QuickActions />
+    </>
+  );
 }
