@@ -112,13 +112,13 @@ export default function Sidebar({
         </div>
 
         {/* Logout */}
-        <div className="p-3">
+        <div className="p-2 ">
           <button
             type="button"
-            className="flex items-center gap-2 w-full px-3 py-2 border rounded-md text-gray-700 hover:bg-[#FFD900] hover:text-black"
+            className="flex items-center gap-2 w-full px-3 py-2 border rounded-md bg-[#000000] text-white hover:opacity-90 "
           >
-            <FiLogOut className="h-5 w-5" />
-            <span className="truncate">Logout</span>
+            <FiLogOut className="h-5 w-5 text-[#FFD900] " />
+            <span className="truncate px-5">Logout</span>
           </button>
         </div>
       </aside>
