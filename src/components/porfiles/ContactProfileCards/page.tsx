@@ -5,7 +5,7 @@ import { FiTrash2, FiEye, FiEdit2, FiBarChart2 } from "react-icons/fi";
 const ContactProfileCards: React.FC = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 px-2">
-      {/* Sarah Johnson */}
+      {/* client 1 */}
       <div className="w-full">
         <div className="w-full max-w-[500px] min-h-[250px] bg-white p-6 border border-gray-200 hover:border-gray-300 rounded-3xl shadow-sm flex flex-col justify-between transition">
           <div className="space-y-3">
@@ -26,8 +26,8 @@ const ContactProfileCards: React.FC = () => {
               <p className="text-gray-800">Tech Solutions Inc.</p>
 
               {/* Status + Scans */}
-              <div className="flex items-center justify-between">
-                <span className="inline-block px-2 py-0.5 rounded bg-[#DCFCE7] text-gray-800 hover:bg-[#FFD900] hover:text-gray-900 transition">
+              <div className="flex items-center justify-between ">
+                <span className="inline-block px-2 py-0.5 rounded-full bg-[#DCFCE7] text-gray-800 hover:bg-[#FFD900] hover:text-gray-900 transition !mt-2">
                   active
                 </span>
                 <span className="inline-flex items-center gap-1 text-gray-800 font-medium">
@@ -36,12 +36,12 @@ const ContactProfileCards: React.FC = () => {
                 </span>
               </div>
 
-              <p className="text-gray-500">Last activity: 2 hours ago</p>
+              <p className="text-gray-500 !mt-5">Last activity: 2 hours ago</p>
             </div>
           </div>
 
           {/* Buttons */}
-          <div className="flex gap-2 mt-4">
+          <div className="flex gap-2 mt-5">
             <button className="flex-1 flex items-center justify-center gap-2 border border-gray-300 rounded-xl bg-white px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-[#FFD900] hover:text-gray-900 transition">
               <FiEye className="h-4 w-4" /> View
             </button>
@@ -55,7 +55,7 @@ const ContactProfileCards: React.FC = () => {
         </div>
       </div>
 
-      {/* Michael Chen */}
+      {/* client 2 */}
       <div className="w-full">
         <div className="w-full max-w-[500px] min-h-[250px] bg-white p-6 border border-gray-200 hover:border-gray-300 rounded-3xl shadow-sm flex flex-col justify-between transition">
           <div className="space-y-3">
@@ -76,7 +76,7 @@ const ContactProfileCards: React.FC = () => {
               <p className="text-gray-800">Creative Agency</p>
 
               <div className="flex items-center justify-between">
-                <span className="inline-block px-2 py-0.5 rounded bg-[#DCFCE7] text-gray-800 hover:bg-[#FFD900] hover:text-gray-900 transition">
+                <span className="inline-block px-2 py-0.5 rounded-full bg-[#DCFCE7] text-gray-800 hover:bg-[#FFD900] hover:text-gray-900 transition !mt-2">
                   active
                 </span>
                 <span className="inline-flex items-center gap-1 text-gray-800 font-medium">
@@ -85,7 +85,7 @@ const ContactProfileCards: React.FC = () => {
                 </span>
               </div>
 
-              <p className="text-gray-500">Last activity: 5 hours ago</p>
+              <p className="text-gray-500 !mt-5 ">Last activity: 5 hours ago</p>
             </div>
           </div>
 
@@ -103,7 +103,7 @@ const ContactProfileCards: React.FC = () => {
         </div>
       </div>
 
-      {/* Emily Davis */}
+      {/* client 3 */}
       <div className="w-full">
         <div className="w-full max-w-[500px] min-h-[250px] bg-white p-6 border border-gray-200 hover:border-gray-300 rounded-3xl shadow-sm flex flex-col justify-between transition">
           <div className="space-y-3">
@@ -124,7 +124,7 @@ const ContactProfileCards: React.FC = () => {
               <p className="text-gray-800">Marketing Pro</p>
 
               <div className="flex items-center justify-between">
-                <span className="inline-block px-2 py-0.5 rounded bg-[#FEF9C3] text-gray-800 hover:bg-[#FFD900] hover:text-gray-900 transition">
+                <span className="inline-block px-2 py-0.5 rounded-full bg-[#FEF9C3] text-gray-800 hover:bg-[#FFD900] hover:text-gray-900 transition !mt-2">
                   pending
                 </span>
                 <span className="inline-flex items-center gap-1 text-gray-800 font-medium">
@@ -133,7 +133,7 @@ const ContactProfileCards: React.FC = () => {
                 </span>
               </div>
 
-              <p className="text-gray-500">Last activity: 1 day ago</p>
+              <p className="text-gray-500 !mt-8">Last activity: 1 day ago</p>
             </div>
           </div>
 
@@ -151,7 +151,7 @@ const ContactProfileCards: React.FC = () => {
         </div>
       </div>
 
-      {/* James Wilson */}
+      {/* client 4 */}
       <div className="w-full">
         <div className="w-full max-w-[500px] min-h-[250px] bg-white p-6 border border-gray-200 hover:border-gray-300 rounded-3xl shadow-sm flex flex-col justify-between transition">
           <div className="space-y-3">
@@ -172,7 +172,7 @@ const ContactProfileCards: React.FC = () => {
               <p className="text-gray-800">Startup Hub</p>
 
               <div className="flex items-center justify-between">
-                <span className="inline-block px-2 py-0.5 rounded bg-[#FEE2E2] text-gray-800 hover:bg-[#FFD900] hover:text-gray-900 transition">
+                <span className="inline-block px-2 py-0.5 rounded-full bg-[#FEE2E2] text-gray-800 hover:bg-[#FFD900] hover:text-gray-900 transition !mt-2">
                   inactive
                 </span>
                 <span className="inline-flex items-center gap-1 text-gray-800 font-medium">
@@ -181,7 +181,7 @@ const ContactProfileCards: React.FC = () => {
                 </span>
               </div>
 
-              <p className="text-gray-500">Last activity: 3 days ago</p>
+              <p className="text-gray-500 !mt-8">Last activity: 3 days ago</p>
             </div>
           </div>
 
