@@ -70,6 +70,7 @@ export default function Sidebar({
               width={120}
               height={42}
               priority
+              style={{ height: "auto" }}
             />
             <button
               type="button"
