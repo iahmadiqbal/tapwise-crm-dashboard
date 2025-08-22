@@ -62,8 +62,8 @@ export default function Sidebar({
         aria-label="Sidebar"
       >
         <div className="pt-4">
-          {/* Logo + Close */}
-          <div className="flex items-center justify-between">
+          {/* Logo (center) + Close button (absolute on mobile) */}
+          <div className="flex items-center justify-center relative">
             <Image
               src="/images/tapwise-dark-logo.png"
               alt="Tapwise Logo"
@@ -73,7 +73,7 @@ export default function Sidebar({
             />
             <button
               type="button"
-              className="lg:hidden p-2"
+              className="lg:hidden p-2 absolute right-0"
               onClick={onClose}
               aria-label="Close menu"
             >
