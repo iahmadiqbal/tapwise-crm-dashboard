@@ -56,7 +56,7 @@ const LeadsTable: React.FC = () => {
       {/* Header */}
       <div className="mb-6 flex items-center justify-between">
         <h2 className="text-3xl text-gray-800 flex items-center gap-3">
-          Leads (4)
+          Leads  4
           <span className="text-base font-semibold px-3 py-1 rounded-md text-black">
             {rows.length}
           </span>
