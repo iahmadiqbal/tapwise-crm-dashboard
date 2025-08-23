@@ -7,8 +7,16 @@ export default function DashboardPage() {
   return (
     <>
       <DashboardStats />
-      <LeadsOverview />
-      <QuickActions />
+
+      <div className="flex flex-col lg:flex-row gap-6 mt-6">
+        <div className="flex-1">
+          <LeadsOverview />
+        </div>
+        <div className="w-full lg:w-[300px]">
+          <QuickActions />
+        </div>
+      </div>
+
       <FeedbackRow />
     </>
   );

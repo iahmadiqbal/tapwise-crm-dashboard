@@ -6,7 +6,7 @@ const LeadsOverview = () => {
   ];
 
   return (
-    <div className="w-full max-w-[580px] bg-[#FFFFFF] border border-gray-200 rounded-xl shadow-md mt-6 p-6">
+    <div className="max-w-[42.5rem] bg-[#FFFFFF] border border-gray-200 rounded-xl shadow-md mt-6 p-6">
       {items.map((item) => (
         <div key={item.label} className="pb-3">
           <div className="flex items-center justify-between  mt-4">

@@ -1,3 +1,9 @@
+import ThemeCustomizer from "../../components/theme/themecustomizer";
+
 export default function ThemePage() {
-  return <h1 className="text-2xl font-bold">Theme</h1>;
+  return (
+    <>
+      <ThemeCustomizer />
+    </>
+  );
 }
